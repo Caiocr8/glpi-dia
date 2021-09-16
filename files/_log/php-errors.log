@@ -1,0 +1,12 @@
+[2021-09-15 16:24:34] glpiphplog.WARNING: Test logger  
+[2021-09-16 11:19:20] glpiphplog.WARNING:   *** PHP Warning (2): mysqli::real_connect(): (HY000/2002): Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente.
+ in C:\laragon\www\glpi\inc\dbmysql.class.php at line 185
+  Backtrace :
+  inc\dbmysql.class.php:185                          mysqli->real_connect()
+  inc\dbmysql.class.php:147                          DBmysql->connect()
+  inc\dbconnection.class.php:192                     DBmysql->__construct()
+  inc\dbconnection.class.php:274                     DBConnection::switchToMaster()
+  inc\config.php:85                                  DBConnection::establishDBConnection()
+  inc\includes.php:48                                include_once()
+  index.php:55                                       include()
+  
